@@ -88,6 +88,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6150EA3D1FB352D600DD87F5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		617D3F1E1FA21F770055E966 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +118,7 @@
 		617D3F291FA21F770055E966 /* Juan_CSP */ = {
 			isa = PBXGroup;
 			children = (
+				6150EA3D1FB352D600DD87F5 /* New Group */,
 				617D3F2A1FA21F770055E966 /* AppDelegate.swift */,
 				617D3F581FA223870055E966 /* CreativityController.swift */,
 				617D3F5A1FA223920055E966 /* AbstractionController.swift */,
