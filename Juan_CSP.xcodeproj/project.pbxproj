@@ -88,11 +88,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6150EA3D1FB352D600DD87F5 /* New Group */ = {
+		6150EA3E1FB3530000DD87F5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				617D3F2C1FA21F770055E966 /* ViewController.swift */,
+				617D3F641FA223D40055E966 /* ImpactController.swift */,
+				617D3F621FA223C80055E966 /* InternetController.swift */,
+				617D3F601FA223BA0055E966 /* ProgrammingController.swift */,
+				617D3F5E1FA223AE0055E966 /* AlgorithmsController.swift */,
+				617D3F5C1FA2239E0055E966 /* DataController.swift */,
+				617D3F5A1FA223920055E966 /* AbstractionController.swift */,
+				617D3F581FA223870055E966 /* CreativityController.swift */,
+				617D3F2A1FA21F770055E966 /* AppDelegate.swift */,
 			);
-			path = "New Group";
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6150EA3F1FB3531F00DD87F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				617D3F2E1FA21F770055E966 /* Main.storyboard */,
+				617D3F331FA21F770055E966 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6150EA411FB3536B00DD87F5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				617D3F361FA21F770055E966 /* Info.plist */,
+				617D3F311FA21F770055E966 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		617D3F1E1FA21F770055E966 = {
@@ -118,20 +145,9 @@
 		617D3F291FA21F770055E966 /* Juan_CSP */ = {
 			isa = PBXGroup;
 			children = (
-				6150EA3D1FB352D600DD87F5 /* New Group */,
-				617D3F2A1FA21F770055E966 /* AppDelegate.swift */,
-				617D3F581FA223870055E966 /* CreativityController.swift */,
-				617D3F5A1FA223920055E966 /* AbstractionController.swift */,
-				617D3F5C1FA2239E0055E966 /* DataController.swift */,
-				617D3F5E1FA223AE0055E966 /* AlgorithmsController.swift */,
-				617D3F601FA223BA0055E966 /* ProgrammingController.swift */,
-				617D3F621FA223C80055E966 /* InternetController.swift */,
-				617D3F641FA223D40055E966 /* ImpactController.swift */,
-				617D3F2C1FA21F770055E966 /* ViewController.swift */,
-				617D3F2E1FA21F770055E966 /* Main.storyboard */,
-				617D3F311FA21F770055E966 /* Assets.xcassets */,
-				617D3F331FA21F770055E966 /* LaunchScreen.storyboard */,
-				617D3F361FA21F770055E966 /* Info.plist */,
+				6150EA3E1FB3530000DD87F5 /* Controller */,
+				6150EA3F1FB3531F00DD87F5 /* View */,
+				6150EA411FB3536B00DD87F5 /* Resource */,
 			);
 			path = Juan_CSP;
 			sourceTree = "<group>";
