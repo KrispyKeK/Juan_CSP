@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="qhD-f5-mRk" kind="show" id="hiB-EW-Pnm"/>
+                                    <segue destination="kVM-fh-kq2" kind="show" id="Cwt-sD-3gE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,6 +33,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-90.400000000000006" y="118.29085457271366"/>
+        </scene>
+        <!--Impact Controller-->
+        <scene sceneID="czv-ai-She">
+            <objects>
+                <viewController id="kVM-fh-kq2" customClass="ImpactController" customModule="Juan_CSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FOj-Ia-E8i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSk-dU-pMv">
+                                <rect key="frame" x="16" y="20" width="343" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvs-h2-hh0">
+                                <rect key="frame" x="16" y="333" width="343" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="NCv-Rs-RzG"/>
+                    </view>
+                    <connections>
+                        <outlet property="LabelViewer" destination="Hvs-h2-hh0" id="wKy-Zv-mW1"/>
+                        <outlet property="imageViewer" destination="wSk-dU-pMv" id="FDj-WF-7RM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jvc-vH-xff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90.400000000000006" y="773.16341829085468"/>
         </scene>
         <!--Algorithms Controller-->
         <scene sceneID="w32-mx-8Zn">

@@ -6,4 +6,13 @@
 //  Copyright © 2017 Dela Cruz, Juan. All rights reserved.
 //
 
-import Foundation
+import UIKit
+public class ImpactController: UIViewController{
+    @IBOutlet weak var imageViewer: UIImageView!
+    @IBOutlet weak var LabelViewer: UILabel!
+    
+    
+    override public func viewDidLoad(){
+        super.viewDidLoad()
+    }
+}
