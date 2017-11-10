@@ -45,5 +45,6 @@ public class AlgorithmsController: UIViewController{
     }
     override public func viewDidLoad(){
         super.viewDidLoad()
+        setupAlgorithms()
     }
 }
