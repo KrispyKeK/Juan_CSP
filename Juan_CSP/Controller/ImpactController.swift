@@ -19,7 +19,7 @@ public class ImpactController: UIViewController{
         popupImage.image = UIImage(named: "womanApp_plan")
         self.labelTwo.text = "Our app is a planned to survey the particpant and ask them for their job title, and salary."
     }
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     override public func viewDidLoad(){

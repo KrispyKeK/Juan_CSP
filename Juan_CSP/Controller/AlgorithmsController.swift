@@ -47,4 +47,7 @@ public class AlgorithmsController: UIViewController{
         super.viewDidLoad()
         setupAlgorithms()
     }
+    override public func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }
