@@ -95,10 +95,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="javaSample" translatesAutoresizingMaskIntoConstraints="NO" id="GDh-ut-JvW">
-                                <rect key="frame" x="46" y="20" width="283" height="177"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3V-BD-QJv">
                                 <rect key="frame" x="24" y="238" width="327" height="253"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -112,6 +108,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="javaSample" translatesAutoresizingMaskIntoConstraints="NO" id="GDh-ut-JvW">
+                                <rect key="frame" x="46" y="84" width="283" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="UK0-rf-Op6"/>
@@ -127,7 +127,7 @@
         <!--View Controller-->
         <scene sceneID="hw9-uf-Adz">
             <objects>
-                <viewController id="mf6-Mw-OcS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlockViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mf6-Mw-OcS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SjR-JK-8I6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,7 +162,7 @@
         <!--View Controller-->
         <scene sceneID="2qD-iN-lmx">
             <objects>
-                <viewController id="1h1-ft-qnt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JavaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1h1-ft-qnt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Utn-eT-hNg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,7 +197,7 @@
         <!--View Controller-->
         <scene sceneID="Gqx-Gd-bWc">
             <objects>
-                <viewController id="aC0-aR-0Sv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ByteCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aC0-aR-0Sv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tLP-Br-BIf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +232,7 @@
         <!--View Controller-->
         <scene sceneID="eWL-dx-xwr">
             <objects>
-                <viewController id="0Gz-oI-A7m" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BInaryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Gz-oI-A7m" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H3A-tE-gAz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -267,7 +267,7 @@
         <!--View Controller-->
         <scene sceneID="NIf-wR-7q8">
             <objects>
-                <viewController id="f5s-js-Ym8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AndGateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f5s-js-Ym8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WcB-oi-MLe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
