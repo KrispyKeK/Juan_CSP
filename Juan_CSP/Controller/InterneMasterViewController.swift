@@ -26,12 +26,18 @@ public class InterenetMasterViewController : UITableViewController
     {
         
     }
-    override public func viewDidLoad() {
+    override public func viewDidLoad()
+    {
         super.viewDidLoad()
         setup()
         self.clearsSelectionOnViewWillAppear = false
     }
-    override public func numberOfSections(in tableView: UITableView) -> Int {
+    override public func numberOfSections(_ tableView: UITableView) -> Int
+    {
         return 1
+    }
+    override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return interenetTopics.count
     }
 }

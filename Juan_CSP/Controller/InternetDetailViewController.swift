@@ -6,4 +6,16 @@
 //  Copyright © 2017 Dela Cruz, Juan. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import WebKit
+public class InternetDetailViewController : UIViewController{
+    
+    override public func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
+    private func setup() -> Void
+    {
+        
+    }
+}
