@@ -20,7 +20,7 @@ public class InterenetMasterViewController : UITableViewController
         "Twitter",
         "Swift Guide"]
     }()
-    private var detailViewController: InterenetDetailViewControllr?
+    private var detailViewController: InterenetDetailViewController?
     
     private func setup() -> Void
     {

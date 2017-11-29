@@ -314,6 +314,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="93E-Pp-2wf"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="mVk-5V-DRW" id="vpo-J1-UdI"/>
+                        <outlet property="wWebView" destination="dv6-XH-2jV" id="DCY-yu-aw0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orB-NN-lkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

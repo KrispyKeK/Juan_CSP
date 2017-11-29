@@ -9,6 +9,8 @@
 import UIKit
 import WebKit
 public class InternetDetailViewController : UIViewController{
+    @IBOutlet weak var textView: UILabel!
+    @IBOutlet weak var wWebView: UIWebView!
     
     override public func viewDidLoad()
     {

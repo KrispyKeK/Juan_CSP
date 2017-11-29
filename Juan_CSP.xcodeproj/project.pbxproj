@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6155C95D1FCEFFE200114E87 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155C95C1FCEFFE200114E87 /* InternetDetailViewController.swift */; };
+		6155C9601FCF0B6400114E87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6155C95F1FCF0B6400114E87 /* WebKit.framework */; };
 		617D3F2B1FA21F770055E966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F2A1FA21F770055E966 /* AppDelegate.swift */; };
 		617D3F2D1FA21F770055E966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F2C1FA21F770055E966 /* ViewController.swift */; };
 		617D3F301FA21F770055E966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617D3F2E1FA21F770055E966 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		6155C95C1FCEFFE200114E87 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		6155C95F1FCF0B6400114E87 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		617D3F271FA21F770055E966 /* Juan_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juan_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617D3F2A1FA21F770055E966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		617D3F2C1FA21F770055E966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6155C9601FCF0B6400114E87 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +128,14 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		6155C95E1FCF0B6400114E87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6155C95F1FCF0B6400114E87 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		617D3F1E1FA21F770055E966 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +143,7 @@
 				617D3F3E1FA21F770055E966 /* Juan_CSPTests */,
 				617D3F491FA21F770055E966 /* Juan_CSPUITests */,
 				617D3F281FA21F770055E966 /* Products */,
+				6155C95E1FCF0B6400114E87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
