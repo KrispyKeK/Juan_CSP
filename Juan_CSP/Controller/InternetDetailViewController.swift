@@ -11,7 +11,45 @@ import WebKit
 public class InternetDetailViewController : UIViewController{
     @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var wWebView: UIWebView!
-    
+    var detailAddress: String?
+    {
+        didSet
+        {
+            configureDetailView()
+        }
+    }
+    var detailText : String?{
+        didSet
+        {
+            configureDetailView()
+        }
+    }
+    private func configureDetailView() -> Void{
+        if detailAddress != nil
+        {
+            if let currentWebView = wWebView{
+                let currentURL = URL(string: detailAddress!)
+                let currentWebRequest = URLRequest(url: currentURL!)
+                currentWebView.load(currentWebRequest)
+            }
+        }
+        else{
+            if let currentWebView = wWebView{
+                let currentURL = URL(string: "https://www")
+                currentWebView.load(URLRequest(url: currentURL!))
+            }
+        }
+        if detailText != nil{
+            if let currentText = textView{
+                currentText.text = detailText
+            }
+        }
+        else{
+            if let currentText = textView{
+                currentText.text = "Jesus"
+            }
+        }
+    }
     override public func viewDidLoad()
     {
         super.viewDidLoad()

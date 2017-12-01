@@ -20,11 +20,15 @@ public class InterenetMasterViewController : UITableViewController
         "Twitter",
         "Swift Guide"]
     }()
-    private var detailViewController: InterenetDetailViewController?
-    
+    private lazy var addresses : [String] = []
+    private var detailViewController: InternetDetailViewController?
     private func setup() -> Void
     {
-        
+        addresses = ["https://google.com","https://google.com","https://google.com","https://google.com","https://google.com"]
+        if let splitView = splitViewController{
+            let currentController = splitView.viewControllers
+            detailViewControlelr = currentController[0] as? InternetDetailViewController
+        }
     }
     override public func viewDidLoad()
     {
@@ -32,6 +36,7 @@ public class InterenetMasterViewController : UITableViewController
         setup()
         self.clearsSelectionOnViewWillAppear = false
     }
+    private
     override public func numberOfSections(_ tableView: UITableView) -> Int
     {
         return 1
