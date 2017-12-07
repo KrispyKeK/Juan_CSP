@@ -8,5 +8,7 @@
 
 import UIKit
 public class ArtCell: UICollectionViewCell{
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var labelView: UILabel!
     
 }
