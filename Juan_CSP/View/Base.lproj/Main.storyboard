@@ -106,7 +106,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="250" height="249"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEG-BG-RtK">
-                                            <rect key="frame" x="0.0" y="280" width="250" height="20"/>
+                                            <rect key="frame" x="0.0" y="274" width="250" height="26"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -120,6 +120,7 @@
                                     <constraint firstItem="dEG-BG-RtK" firstAttribute="top" secondItem="K0A-HD-YsA" secondAttribute="bottom" id="Vjt-xI-xpU"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="dEG-BG-RtK" secondAttribute="trailing" id="Zwc-lt-fn3"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="dEG-BG-RtK" secondAttribute="bottom" id="in6-r3-o6p"/>
+                                    <constraint firstItem="dEG-BG-RtK" firstAttribute="top" secondItem="K0A-HD-YsA" secondAttribute="bottom" id="k1p-tu-GGk"/>
                                     <constraint firstItem="dEG-BG-RtK" firstAttribute="leading" secondItem="Fb2-Ol-KLD" secondAttribute="leadingMargin" id="lrm-7l-Rsu"/>
                                 </constraints>
                                 <connections>
@@ -137,7 +138,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHK-Op-0IF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1031" y="62"/>
+            <point key="canvasLocation" x="-1031.2" y="61.619190404797607"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xKA-ds-HGs">

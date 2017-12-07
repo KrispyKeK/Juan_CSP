@@ -69,7 +69,7 @@ public class InterenetMasterViewController : UITableViewController
         return interenetTopics.count
         
     }
-    override public func tableView(_ tableView: UITableView, cellforRowAt indexPaht: IndexPath) -> UITableViewCell{
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPaht: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: IndexPath)
         let currentText = interenetTopics(IndexPath.row)
         cell.textLabel.text = currentText
