@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61094DF01FD989DF00B6C8D2 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61094DEF1FD989DF00B6C8D2 /* ArtCell.swift */; };
+		61094DF21FD989F700B6C8D2 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61094DF11FD989F700B6C8D2 /* DrawingView.swift */; };
 		6155C95D1FCEFFE200114E87 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155C95C1FCEFFE200114E87 /* InternetDetailViewController.swift */; };
 		6155C9601FCF0B6400114E87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6155C95F1FCF0B6400114E87 /* WebKit.framework */; };
 		617D3F2B1FA21F770055E966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F2A1FA21F770055E966 /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61094DEF1FD989DF00B6C8D2 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
+		61094DF11FD989F700B6C8D2 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		6155C95C1FCEFFE200114E87 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		6155C95F1FCF0B6400114E87 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		617D3F271FA21F770055E966 /* Juan_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juan_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +110,8 @@
 				617D3F581FA223870055E966 /* CreativityController.swift */,
 				617D3F2A1FA21F770055E966 /* AppDelegate.swift */,
 				6155C95C1FCEFFE200114E87 /* InternetDetailViewController.swift */,
+				61094DEF1FD989DF00B6C8D2 /* ArtCell.swift */,
+				61094DF11FD989F700B6C8D2 /* DrawingView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,7 +326,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				617D3F631FA223C80055E966 /* InterneMasterViewController.swift in Sources */,
+				61094DF01FD989DF00B6C8D2 /* ArtCell.swift in Sources */,
 				617D3F5D1FA2239E0055E966 /* DataController.swift in Sources */,
+				61094DF21FD989F700B6C8D2 /* DrawingView.swift in Sources */,
 				617D3F611FA223BA0055E966 /* ProgrammingController.swift in Sources */,
 				617D3F5F1FA223AE0055E966 /* AlgorithmsController.swift in Sources */,
 				617D3F5B1FA223920055E966 /* AbstractionController.swift in Sources */,
