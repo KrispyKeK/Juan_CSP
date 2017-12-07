@@ -65,4 +65,39 @@ public class CreativityController: UICollectionViewController, UICollectionViewD
         artCell.imageName.text = "My Art"
         return artCell
     }
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               sizeForItemAt indexPath: IndexPath) -> CGSize{
+        if indexPath == largePhotoIndexPath{
+            let art = artSelection[indexPath.row]
+            let size = collectionView.bounds.size
+            let widthScale = (size.width / art!.size.width) * CGFloat(0.80)
+            let largeSize = CGSize(width: art!.size.width * widthScale, height: art!.size.height * widthScale)
+            return largeSize
+        }
+        let paddingSpace = sectionInsets.left * (itemsPerRow+1)
+        let avaiableWidth = view.frame.width - paddingSpace
+        let widthPerItem = avaiableWidth / itemsPerRow
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    public func collectionView(_ collectionView: UICollectionView,
+                                layout collectionViewLayout: UICollectionViewLayout,
+                                insetForSectionAt section: Int) -> UIEdgeInsets{
+        return sectionInsets
+    }
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               minimumLineSpacingForSecitonAt section: Int) -> CGFloat{
+        return sectionInsets.left
+    }
+    override public func collectionView(_ collectionView: UICollectionView,
+                                        shouldSelectItemAt indexPath: IndexPath) -> Bool{
+        if largePhotoIndexPath == indexPath{
+            largePhotoIndexPath = nil
+        }
+        else{
+            largePhotoIndexPath = indexPath
+        }
+        return false
+    }
 }

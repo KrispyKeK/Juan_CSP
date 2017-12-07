@@ -6,4 +6,7 @@
 //  Copyright © 2017 Dela Cruz, Juan. All rights reserved.
 //
 
-import Foundation
+import UIKit
+public class ArtCell: UICollectionViewCell{
+    
+}
