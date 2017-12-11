@@ -36,12 +36,16 @@ public class InterenetMasterViewController : UITableViewController
         setup()
         self.clearsSelectionOnViewWillAppear = false
     }
-    private
-    override public func numberOfSections(_ tableView: UITableView) -> Int
-    {
+    override public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier"
+            , for: indexPath)
+        let currentText = interenetTopics[indexPath.row]
+        cell.textLabel!.text = currentText
+        return cell
+    }
     override public func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier! == "showDetail"{
             if let indexPath = self.tableView.indexPathForSelectedRow{
@@ -68,11 +72,5 @@ public class InterenetMasterViewController : UITableViewController
     {
         return interenetTopics.count
         
-    }
-    override public func tableView(_ tableView: UITableView, cellForRowAt indexPaht: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: IndexPath)
-        let currentText = interenetTopics(IndexPath.row)
-        cell.textLabel.text = currentText
-        return cell
     }
 }

@@ -23,7 +23,7 @@
 		617D3F5D1FA2239E0055E966 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F5C1FA2239E0055E966 /* DataController.swift */; };
 		617D3F5F1FA223AE0055E966 /* AlgorithmsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F5E1FA223AE0055E966 /* AlgorithmsController.swift */; };
 		617D3F611FA223BA0055E966 /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F601FA223BA0055E966 /* ProgrammingController.swift */; };
-		617D3F631FA223C80055E966 /* InterneMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F621FA223C80055E966 /* InterneMasterViewController.swift */; };
+		617D3F631FA223C80055E966 /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F621FA223C80055E966 /* InternetMasterViewController.swift */; };
 		617D3F651FA223D40055E966 /* ImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F641FA223D40055E966 /* ImpactController.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +67,7 @@
 		617D3F5C1FA2239E0055E966 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		617D3F5E1FA223AE0055E966 /* AlgorithmsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsController.swift; sourceTree = "<group>"; };
 		617D3F601FA223BA0055E966 /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
-		617D3F621FA223C80055E966 /* InterneMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterneMasterViewController.swift; sourceTree = "<group>"; };
+		617D3F621FA223C80055E966 /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		617D3F641FA223D40055E966 /* ImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,16 +102,14 @@
 			children = (
 				617D3F2C1FA21F770055E966 /* ViewController.swift */,
 				617D3F641FA223D40055E966 /* ImpactController.swift */,
-				617D3F621FA223C80055E966 /* InterneMasterViewController.swift */,
+				617D3F621FA223C80055E966 /* InternetMasterViewController.swift */,
 				617D3F601FA223BA0055E966 /* ProgrammingController.swift */,
 				617D3F5E1FA223AE0055E966 /* AlgorithmsController.swift */,
 				617D3F5C1FA2239E0055E966 /* DataController.swift */,
 				617D3F5A1FA223920055E966 /* AbstractionController.swift */,
 				617D3F581FA223870055E966 /* CreativityController.swift */,
-				617D3F2A1FA21F770055E966 /* AppDelegate.swift */,
 				6155C95C1FCEFFE200114E87 /* InternetDetailViewController.swift */,
 				61094DEF1FD989DF00B6C8D2 /* ArtCell.swift */,
-				61094DF11FD989F700B6C8D2 /* DrawingView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,6 +117,7 @@
 		6150EA3F1FB3531F00DD87F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				61094DF11FD989F700B6C8D2 /* DrawingView.swift */,
 				617D3F2E1FA21F770055E966 /* Main.storyboard */,
 				617D3F331FA21F770055E966 /* LaunchScreen.storyboard */,
 			);
@@ -146,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				617D3F291FA21F770055E966 /* Juan_CSP */,
+				617D3F2A1FA21F770055E966 /* AppDelegate.swift */,
 				617D3F3E1FA21F770055E966 /* Juan_CSPTests */,
 				617D3F491FA21F770055E966 /* Juan_CSPUITests */,
 				617D3F281FA21F770055E966 /* Products */,
@@ -325,7 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617D3F631FA223C80055E966 /* InterneMasterViewController.swift in Sources */,
+				617D3F631FA223C80055E966 /* InternetMasterViewController.swift in Sources */,
 				61094DF01FD989DF00B6C8D2 /* ArtCell.swift in Sources */,
 				617D3F5D1FA2239E0055E966 /* DataController.swift in Sources */,
 				61094DF21FD989F700B6C8D2 /* DrawingView.swift in Sources */,

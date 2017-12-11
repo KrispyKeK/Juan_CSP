@@ -9,15 +9,15 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewController {
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         if let splitViewController = window!.rootViewController as? UISplitViewController{
-            let navigationController = splitViewController.viewController[splitViewController.viewControllers.count - 1] as! UINavigationController
-            navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.dispaydeButtonItem
+            let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count - 1] as! UINavigationController
+            navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
             splitViewController.delegate = self
         }
         return true
@@ -45,9 +45,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewController {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    func splitViewContorller(_ splitViewControlelr: UISplitViewController, collapseSecondary secondaryViewContoller: UIViewController, onto primaryViewContorller: UIViewContorller) -> Void{
-        guard let secondaryAsNavController = secondaaryViewController as? UINavigationController else{false}
-        guard let topAsDetailController = secondaryAsNavController.topViewController as? INternetDetailViewControlelr else{return false}
+    func splitViewController(_ splitViewControlelr: UISplitViewController, collapseSecondary secondaryViewContoller: UIViewController, onto primaryViewContorller: UIViewController) -> Bool{
+        guard let secondaryAsNavController = secondaryViewContoller as? UINavigationController else{return false}
+        guard let topAsDetailController = secondaryAsNavController.topViewController as? InternetDetailViewController else{return false}
         if topAsDetailController.detailAddress == nil{
             return true
         }

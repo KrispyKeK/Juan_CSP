@@ -35,8 +35,8 @@ public class InternetDetailViewController : UIViewController{
         }
         else{
             if let currentWebView = wWebView{
-                let currentURL = URL(string: "https://www")
-                currentWebView.load(URLRequest(url: currentURL!))
+                let currentURL = URL(string: "https://www.cnn.com")
+                currentWebView.load(URLRequest(url:currentURL!))
             }
         }
         if detailText != nil{
