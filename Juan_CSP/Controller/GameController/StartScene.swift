@@ -29,12 +29,12 @@ public class StartScene : SKScene
     {
         let currentTouch = touches.first
         let touchLocation = currentTouch?.location(in: self)
-        let touchNode = self.atPoint(touLocation!)
+        let touchNode = self.atPoint(touchLocation!)
         
         if (touchNode.name == "start"){
             let gameOverScene = GameScene(size: size)
             gameOverScene.scaleMode = scaleMode
-            let transitionType = SKTransition.flipHorizon(withDuration: 1.0)
+            let transitionType = SKTransition.flipHorizontal(withDuration: 1.0)
             view?.presentScene(gameOverScene, transition: transitionType)
         }
         
