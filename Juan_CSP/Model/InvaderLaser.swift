@@ -9,11 +9,12 @@
 import UIKit
 import SpriteKit
 
-public class InvaderBullet: Projectile
+public class InvaderLaser: Projectile
 {
     override init(imageName: String, bulletSound:String?)
     {
         super.init(imageName: imageName, bulletSound: bulletSound)
+        self.physicsBody = SKPhysicsBody(texture: self.texture!, size: self.size)
         
     }
     
@@ -22,9 +23,5 @@ public class InvaderBullet: Projectile
         super.init(coder: aDecoder)
     }
     
-    public func fireBullet(scene: SKScene) -> Void
-    {
-        
-    }
     
 }

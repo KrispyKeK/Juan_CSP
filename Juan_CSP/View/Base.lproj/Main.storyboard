@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGp-KW-rUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2274" y="1147"/>
+            <point key="canvasLocation" x="-2153" y="1227"/>
         </scene>
         <!--Abstraction Controller-->
         <scene sceneID="Nkf-OV-9lW">

@@ -17,7 +17,7 @@ public class LevelCompleteScene: SKScene
         self.backgroundColor = SKColor.black
         let startGameButton = SKSpriteNode(imageNamed: "nextLevel")
         startGameButton.position = CGPoint(x:size.width/2, y:size.height/2 - 100)
-        startGameButton.name = "nextlevel"
+        startGameButton.name = "nextLevel"
         addChild(startGameButton)
     }
     
@@ -26,11 +26,11 @@ public class LevelCompleteScene: SKScene
         let touch = touches.first
         let touchLocation = touch?.location(in: self)
         let touchedNode = self.atPoint(touchLocation!)
-        if(touchedNode.name == "nextlevel")
+        if(touchedNode.name == "nextLevel")
         {
             let gameOverScene = GameScene(size: size)
             gameOverScene.scaleMode = scaleMode
-            let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
+            let transitionType = SKTransition.flipHorizontal(withDuration: 1.0)
             view?.presentScene(gameOverScene,transition: transitionType)
         }
     }
