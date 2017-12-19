@@ -29,7 +29,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     var accelerationX: CGFloat = 0.0
     
     //MARK:- Game Methods
-    
     private func setupInvaders() -> Void
     {
         let numberOfInvaders = gameLevel * 2 + 1
@@ -87,31 +86,50 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
                 invader.position.y -= CGFloat(10)
             }
             changeDirection = false
-            
         }
-        
     }
-    
     private func invokeInvaderFire() -> Void
     {
-        
+        let fireBullet = SKAction.run(){
+            self.fireInvaderBullet()
+        }
+        let waitToFireInvaderBullet = SKAction.wait(forDuration: 2.5)
+        let invaderFire = SKAction.sequence([fireBullet, waitToFireInvaderBullet])
+        let repeatForevertAction = SKAction.repeatForever(invaderFire)
+        run(repeatForevertAction)
     }
-    
     func fireInvaderBullet() -> Void
     {
-       
+        if (invadersThatCanFire.isEmpty){
+            gameLevel += 1
+            
     }
+        if let randomInvader = invadersThatCanFire.randomElement(){
+            randomInvader.fireBullet(scene: self)
+        }
     
     func newGame() -> Void
     {
-        
+        let newGameScene = StartScene(size: size)
+        newGameScene.scaleMode = scaleMode
+        let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
+        view?.presentScene(newGameScene, transition: transitionType)
     }
     
     func levelComplete() -> Void
     {
-        
+        if (gameLevel <= maxLevels){
+            let levelCompleteScene = LevelCompleteScene(size: size)
+            levelCompleteScene.scaleMode = scaleMode
+            let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
+            view?.presentScene(levelCompleteScene, transition: transitionType)
+        }
+        else{
+            gameLevel = 1
+            newGame()
+        }
     }
-    
+    }
     
     //MARK:- Scene methods
     
@@ -121,6 +139,10 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         self.physicsWorld.contactDelegate = self
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody
+        let starField = SKEmitterNode(fileNamed: "StarField")
+        starField?.position = CGPoint(x: size.width/2, y: size.height/2)
+        starField?.zPosition = -1000
+        addChild(starField!)
         
         backgroundColor = UIColor.magenta
         rightBounds = self.size.width - 30
@@ -143,7 +165,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     override public func didSimulatePhysics()
     {
-        
+        player.physicsBody?.velocity = CGVector(dx: accelerationX * 600, dy: 0)
     }
 
     //MARK:- Handle Motion
