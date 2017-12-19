@@ -40,6 +40,7 @@
 		617D3F611FA223BA0055E966 /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F601FA223BA0055E966 /* ProgrammingController.swift */; };
 		617D3F631FA223C80055E966 /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F621FA223C80055E966 /* InternetMasterViewController.swift */; };
 		617D3F651FA223D40055E966 /* ImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F641FA223D40055E966 /* ImpactController.swift */; };
+		61F106C81FE9687F00EF5C08 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F106C71FE9687F00EF5C08 /* DeathScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		617D3F601FA223BA0055E966 /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
 		617D3F621FA223C80055E966 /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		617D3F641FA223D40055E966 /* ImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactController.swift; sourceTree = "<group>"; };
+		61F106C71FE9687F00EF5C08 /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				615877AF1FE181E4005857A3 /* GameScene.swift */,
 				615877B01FE181E4005857A3 /* LevelCompleteScene.swift */,
 				615877B11FE181E5005857A3 /* StartScene.swift */,
+				61F106C71FE9687F00EF5C08 /* DeathScene.swift */,
 			);
 			path = GameController;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				617D3F2D1FA21F770055E966 /* ViewController.swift in Sources */,
 				615877C31FE1885E005857A3 /* Player.swift in Sources */,
 				615877C51FE1885E005857A3 /* Projectile.swift in Sources */,
+				61F106C81FE9687F00EF5C08 /* DeathScene.swift in Sources */,
 				615877B21FE181E5005857A3 /* GameScene.swift in Sources */,
 				6155C95D1FCEFFE200114E87 /* InternetDetailViewController.swift in Sources */,
 			);
