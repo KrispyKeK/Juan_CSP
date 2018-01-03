@@ -30,7 +30,7 @@ public class LevelCompleteScene: SKScene
         {
             let gameOverScene = GameScene(size: size)
             gameOverScene.scaleMode = scaleMode
-            let transitionType = SKTransition.flipHorizontal(withDuration: 1.0)
+            let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
             view?.presentScene(gameOverScene,transition: transitionType)
         }
     }
