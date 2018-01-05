@@ -30,13 +30,13 @@ public class InternetDetailViewController : UIViewController{
             if let currentWebView = wWebView{
                 let currentURL = URL(string: detailAddress!)
                 let currentWebRequest = URLRequest(url: currentURL!)
-                //currentWebView.load(currentWebRequest)
+               // currentWebView.load(currentWebRequest)
             }
         }
         else{
             if let currentWebView = wWebView{
                 let currentURL = URL(string: "https://www.cnn.com")
-                //currentWebView.load(URLRequest(url:currentURL!))
+               // currentWebView.load(URLRequest(url:currentURL!))
             }
         }
         if detailText != nil{

@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGp-KW-rUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2153" y="1227"/>
+            <point key="canvasLocation" x="-1460" y="770"/>
         </scene>
         <!--Abstraction Controller-->
         <scene sceneID="Nkf-OV-9lW">
@@ -31,7 +31,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="ovu-nm-cSz" customClass="AbstractionController" customModule="Juan_CSP" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHZ-g9-A9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1404" y="770"/>
+            <point key="canvasLocation" x="-1420" y="1551"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -41,28 +41,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WN-br-DGP">
-                                <rect key="frame" x="164" y="279" width="46" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="ovu-nm-cSz" kind="show" id="SAE-1V-yy9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qF4-DX-Yja">
-                                <rect key="frame" x="164" y="419" width="46" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="Tnb-d9-7cn" kind="show" id="l32-du-6Xo"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUa-oU-Mp6">
                                 <rect key="frame" x="164" y="545" width="46" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Game"/>
                                 <connections>
                                     <segue destination="JIq-M4-8kh" kind="show" id="dza-e8-a9c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0V-tN-6wC">
+                                <rect key="frame" x="164" y="385" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Abstraction"/>
+                                <connections>
+                                    <segue destination="ovu-nm-cSz" kind="show" id="zT2-CM-i3T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msq-Qc-yq4">
+                                <rect key="frame" x="164" y="133" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Internet"/>
+                                <connections>
+                                    <segue destination="HT5-jq-oQ9" kind="show" id="PO2-sM-8Yw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsQ-g6-ZgA">
+                                <rect key="frame" x="164" y="251" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Drawing"/>
+                                <connections>
+                                    <segue destination="UgY-eX-pzf" kind="show" id="V6R-V5-qw4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-687.20000000000005" y="769.56521739130437"/>
+            <point key="canvasLocation" x="-706.39999999999998" y="769.56521739130437"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="y2k-io-O1T">
@@ -350,7 +359,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1a-5Y-rUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="770"/>
+            <point key="canvasLocation" x="23" y="770"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hw9-uf-Adz">
@@ -385,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNc-92-g1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1253.5999999999999" y="1432.5337331334333"/>
+            <point key="canvasLocation" x="1230" y="1551"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2qD-iN-lmx">
@@ -420,7 +429,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GaF-nv-IC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1901.5999999999999" y="1432.5337331334333"/>
+            <point key="canvasLocation" x="1876" y="1551"/>
         </scene>
         <!--Internet Detail View Controller-->
         <scene sceneID="vDW-f7-Qc7">
@@ -453,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orB-NN-lkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2404" y="96.7016491754123"/>
+            <point key="canvasLocation" x="2830" y="420"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Gqx-Gd-bWc">
@@ -488,7 +497,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyh-xs-leC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-687" y="1433"/>
+            <point key="canvasLocation" x="-687" y="1552"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eWL-dx-xwr">
@@ -523,7 +532,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3FT-ML-nmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39.200000000000003" y="1432.5337331334333"/>
+            <point key="canvasLocation" x="-57" y="1552"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NIf-wR-7q8">
@@ -558,7 +567,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNP-ob-fM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="608.79999999999995" y="1432.5337331334333"/>
+            <point key="canvasLocation" x="574" y="1551"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yn6-xy-toG">
@@ -576,7 +585,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-bd-aXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1706" y="62"/>
+            <point key="canvasLocation" x="-1774" y="62"/>
         </scene>
     </scenes>
     <resources>
@@ -588,7 +597,4 @@
         <image name="javaCode" width="633" height="395"/>
         <image name="javaSample" width="1126" height="754"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="l32-du-6Xo"/>
-    </inferredMetricsTieBreakers>
 </document>

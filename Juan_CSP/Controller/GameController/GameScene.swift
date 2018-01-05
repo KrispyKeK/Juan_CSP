@@ -214,11 +214,11 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         }
         if ((firstBody.categoryBitMask & CollisionCategories.Player != 0) && (secondBody.categoryBitMask & CollisionCategories.InvaderBullet != 0))
         {
-            player.die()
+            //player.die()
         }
         if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.Player != 0))
         {
-            player.kill()
+            //player.kill()
         }
         if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
         {
