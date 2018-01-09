@@ -40,6 +40,9 @@
 		617D3F611FA223BA0055E966 /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F601FA223BA0055E966 /* ProgrammingController.swift */; };
 		617D3F631FA223C80055E966 /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F621FA223C80055E966 /* InternetMasterViewController.swift */; };
 		617D3F651FA223D40055E966 /* ImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D3F641FA223D40055E966 /* ImpactController.swift */; };
+		61A1DA8320050DAD007C6BF2 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1DA8220050DAD007C6BF2 /* DataViewController.swift */; };
+		61A1DA8520050DB8007C6BF2 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1DA8420050DB8007C6BF2 /* BucketItemCell.swift */; };
+		61A1DA8820051738007C6BF2 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1DA8720051738007C6BF2 /* BucketItem.swift */; };
 		61F106C81FE9687F00EF5C08 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F106C71FE9687F00EF5C08 /* DeathScene.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +103,10 @@
 		617D3F601FA223BA0055E966 /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
 		617D3F621FA223C80055E966 /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		617D3F641FA223D40055E966 /* ImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactController.swift; sourceTree = "<group>"; };
+		61A1DA8220050DAD007C6BF2 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		61A1DA8420050DB8007C6BF2 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		61A1DA8620050E64007C6BF2 /* bucket.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = bucket.csv; path = ../../../../../Downloads/bucket.csv; sourceTree = "<group>"; };
+		61A1DA8720051738007C6BF2 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
 		61F106C71FE9687F00EF5C08 /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +139,7 @@
 		6150EA3E1FB3530000DD87F5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				61A1DA8120050D8F007C6BF2 /* DataView */,
 				615877B51FE1823E005857A3 /* GameController */,
 				617D3F2C1FA21F770055E966 /* ViewController.swift */,
 				617D3F641FA223D40055E966 /* ImpactController.swift */,
@@ -162,6 +170,7 @@
 		6150EA411FB3536B00DD87F5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				61A1DA8620050E64007C6BF2 /* bucket.csv */,
 				615877BB1FE18826005857A3 /* sounds */,
 				615877AB1FE176C2005857A3 /* Utilities.swift */,
 				617D3F361FA21F770055E966 /* Info.plist */,
@@ -261,6 +270,16 @@
 				617D3F4C1FA21F770055E966 /* Info.plist */,
 			);
 			path = Juan_CSPUITests;
+			sourceTree = "<group>";
+		};
+		61A1DA8120050D8F007C6BF2 /* DataView */ = {
+			isa = PBXGroup;
+			children = (
+				61A1DA8220050DAD007C6BF2 /* DataViewController.swift */,
+				61A1DA8420050DB8007C6BF2 /* BucketItemCell.swift */,
+				61A1DA8720051738007C6BF2 /* BucketItem.swift */,
+			);
+			path = DataView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +426,7 @@
 				615877C21FE1885E005857A3 /* InvaderLaser.swift in Sources */,
 				615877C11FE1885E005857A3 /* Invader.swift in Sources */,
 				615877B31FE181E5005857A3 /* LevelCompleteScene.swift in Sources */,
+				61A1DA8320050DAD007C6BF2 /* DataViewController.swift in Sources */,
 				617D3F631FA223C80055E966 /* InternetMasterViewController.swift in Sources */,
 				61094DF01FD989DF00B6C8D2 /* ArtCell.swift in Sources */,
 				617D3F5D1FA2239E0055E966 /* DataController.swift in Sources */,
@@ -414,6 +434,8 @@
 				615877C41FE1885E005857A3 /* PlayerLaser.swift in Sources */,
 				61094DF21FD989F700B6C8D2 /* DrawingView.swift in Sources */,
 				615877B41FE181E5005857A3 /* StartScene.swift in Sources */,
+				61A1DA8520050DB8007C6BF2 /* BucketItemCell.swift in Sources */,
+				61A1DA8820051738007C6BF2 /* BucketItem.swift in Sources */,
 				617D3F611FA223BA0055E966 /* ProgrammingController.swift in Sources */,
 				617D3F5F1FA223AE0055E966 /* AlgorithmsController.swift in Sources */,
 				617D3F5B1FA223920055E966 /* AbstractionController.swift in Sources */,
